@@ -49,10 +49,10 @@ const Order = () => {
     lightWithSugar.style.display = "none";
 
     switch (true) {
-      case waterRemaining == 0 ||
-        sugarRemaining == 0 ||
-        milkRemaining == 0 ||
-        waterRemaining == 0: {
+      case waterRemaining === 0 ||
+        sugarRemaining === 0 ||
+        milkRemaining === 0 ||
+        waterRemaining === 0: {
         errormsg.style.display = "block";
         coffeeMug1.style.display = "none";
         coffeeMug2.style.display = "none";
@@ -415,7 +415,7 @@ const Order = () => {
         </div>
         <div className="cup" id="cup">
           <div className="handle"></div>
-          <img srcSet={require("../image/hot-coffee.png")} alt="hot-coffee-img"/>
+          <img id="hot-coffee" srcSet={require("../image/hot-coffee.png")} alt="hot-coffee-img"/>
         </div>
         <div className="image-container image" id="image-container">
           <img
